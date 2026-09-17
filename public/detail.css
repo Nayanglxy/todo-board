@@ -96,11 +96,12 @@
   details.rzmore>summary{cursor:pointer;font-size:11px;color:var(--tx3);list-style:none;padding:2px 0}
   pre.args{margin:0;padding:7px 13px 11px;color:var(--tx2);font:12px/1.5 ui-monospace,Menlo,monospace;max-height:240px;overflow:auto;white-space:pre-wrap}
   /* comment boxes */
-  textarea.cmt{display:none;width:100%;box-sizing:border-box;margin:9px 0 2px;background:var(--bg);border:1px solid var(--mg);border-radius:8px;color:var(--ye);font:13.5px/1.55 ui-sans-serif,system-ui,sans-serif;padding:8px 10px;resize:vertical;min-height:54px}
+  textarea.cmt{display:none;width:100%;box-sizing:border-box;margin:9px 0 2px;background:var(--bg);border:1px solid #ff3ca640;border-radius:8px;color:var(--tx);font:13.5px/1.55 ui-sans-serif,system-ui,sans-serif;padding:8px 10px;resize:vertical;min-height:54px}
+  textarea.cmt:focus{outline:none;border-color:var(--mg)}
   textarea.cmt.show{display:block}
   textarea.cmt::placeholder{color:var(--tx3)}
-  .qc{margin:9px 0 4px;border-left:3px solid var(--mg);background:#1c1220;border-radius:0 8px 8px 0;padding:8px 11px}
-  .qc .qtxt{color:var(--ye);font-style:italic;border-left:2px solid var(--mg);padding-left:10px;margin:0 0 4px;font-size:13px;white-space:pre-wrap}
+  .qc{margin:9px 0 4px;border-left:3px solid #ff3ca680;background:#17121f;border-radius:0 8px 8px 0;padding:8px 11px}
+  .qc .qtxt{color:var(--tx2);font-style:italic;border-left:2px solid #ff3ca666;padding-left:10px;margin:0 0 4px;font-size:13px;white-space:pre-wrap}
   .qc textarea.cmt{margin-top:4px}
   .qcx{cursor:pointer;font-size:11px;color:var(--tx2)}.qcx:hover{color:var(--re)}
   /* floating selection button */
