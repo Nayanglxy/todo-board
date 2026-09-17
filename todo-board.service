@@ -1,0 +1,16 @@
+[Unit]
+Description=Todo board review server (localhost review surface for omp agent sessions)
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/nbandaru/todo-board
+Environment=TODO_BOARD_PORT=8787
+ExecStart=/usr/bin/node /home/nbandaru/todo-board/server.mjs
+Restart=always
+RestartSec=2
+# harden a touch: it only needs its own dir
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

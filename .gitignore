@@ -1,0 +1,12 @@
+# runtime data — event-sourced truth + artifact bodies (machine/local state)
+events/
+artifacts/
+
+# captured session transcript dumps (large, may contain private data)
+omp-session-*.html
+*.local.html
+
+# node
+node_modules/
+npm-debug.log*
+.DS_Store
