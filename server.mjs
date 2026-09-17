@@ -427,7 +427,7 @@ const server = createServer(async (req, res) => {
   }
 });
 server.listen(PORT, HOST, () => {
-  console.log(`todo board on http://${HOST}:${PORT}  (dir: ${root()})`);
+  console.log(`Absol on http://${HOST}:${PORT}  (dir: ${root()})`);
   console.log(`tunnel:  ssh -L ${PORT}:localhost:${PORT} <this-box>  ->  http://localhost:${PORT}`);
 });
 
@@ -444,12 +444,12 @@ server.on("error", (err) => {
 // ---- the page: client-side render from /api/board, edits POST to /api/edit ----
 const PAGE = `<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>todo board</title>
+<title>Absol</title>
 <link rel="stylesheet" href="/assets/board.css">
 </head><body>
 <header>
   <span class="mark"></span>
-  <h1>todo board</h1>
+  <h1>Absol</h1>
   <span class="dot" id="dot" title="live">&#9679;</span>
   <span class="khint" id="khbtn" title="keyboard shortcuts">? keys</span>
 </header>
@@ -498,7 +498,7 @@ const DETAIL = `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="/assets/detail.css">
 </head><body>
 <header>
-  <div class="crumb"><a href="/">&#8592; board</a> <span class="khint" id="toolstog" title="expand/collapse reasoning (t)">reasoning: hidden</span> <span class="khint" id="khbtn" title="keyboard shortcuts">? keys</span></div>
+  <div class="crumb"><a href="/">&#8592; Absol</a> <span class="khint" id="toolstog" title="expand/collapse reasoning (t)">reasoning: hidden</span> <span class="khint" id="khbtn" title="keyboard shortcuts">? keys</span></div>
   <h1 id="title">&hellip;</h1>
   <div class="meta" id="meta"></div>
 </header>
